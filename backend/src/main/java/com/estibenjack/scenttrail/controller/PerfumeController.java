@@ -22,7 +22,7 @@ public class PerfumeController {
         return perfumeService.getAllPerfumes();
     }
 
-    //get perfume by id
+    // get perfume by id
     @GetMapping("/{id}")
     public Optional<Perfume> getPerfumeById(@PathVariable Long id) {
         return perfumeService.getPerfumeById(id);
@@ -46,19 +46,19 @@ public class PerfumeController {
         return perfumeService.partiallyUpdatePerfume(id, perfumeDetails);
     }
 
-    //delete a perfume
+    // delete a perfume
     @DeleteMapping("/{id}")
     public void deletePerfume(@PathVariable Long id) {
         perfumeService.deletePerfume(id);
     }
 
-    //get perfumes by season
+    // get perfumes by season
     @GetMapping("/season/{season}")
     public List<Perfume> getPerfumesBySeason(@PathVariable PerfumeAttributes.SeasonEnum season) {
         return perfumeService.getPerfumesBySeason(season);
     }
 
-    //get perfumes by brand
+    // get perfumes by brand
     @GetMapping("/brand/{brand}")
     public List<Perfume> getPerfumesByBrand(@PathVariable String brand) {
         return perfumeService.getPerfumesByBrand(brand);
