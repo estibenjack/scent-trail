@@ -1,0 +1,7 @@
+/Users/stevenjackson/Desktop/dev/scent-trail/src/main/java/com/estibenjack/scenttrail/ScentTrailApplication.java
+/Users/stevenjackson/Desktop/dev/scent-trail/src/main/java/com/estibenjack/scenttrail/controller/PerfumeController.java
+/Users/stevenjackson/Desktop/dev/scent-trail/src/main/java/com/estibenjack/scenttrail/entity/Perfume.java
+/Users/stevenjackson/Desktop/dev/scent-trail/src/main/java/com/estibenjack/scenttrail/enums/PerfumeAttributes.java
+/Users/stevenjackson/Desktop/dev/scent-trail/src/main/java/com/estibenjack/scenttrail/exception/PerfumeNotFoundException.java
+/Users/stevenjackson/Desktop/dev/scent-trail/src/main/java/com/estibenjack/scenttrail/repository/PerfumeRepository.java
+/Users/stevenjackson/Desktop/dev/scent-trail/src/main/java/com/estibenjack/scenttrail/service/PerfumeService.java
