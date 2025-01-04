@@ -42,7 +42,7 @@ public class PerfumeAttributes {
     public enum LongevityEnum {
         WEAK,
         MODERATE,
-        LONG_LASTING,
+        LONG,
         ETERNAL;
 
         @JsonCreator
