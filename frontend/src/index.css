@@ -1,0 +1,14 @@
+/* Global reset - this will remove default margin, padding, and apply border-box for all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: Set body background and font properties */
+body {
+  font-family: "Poppins", serif;
+  background-color: #f8f9fa; /* Light background for the page */
+}
