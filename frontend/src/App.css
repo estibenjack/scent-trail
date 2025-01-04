@@ -12,8 +12,7 @@ body {
 }
 
 main {
-  flex: 1; /* This makes the content area flexible to fill available space */
-}
+  flex: 1; 
 
 .nav-container {
   display: flex;
