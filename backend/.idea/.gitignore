@@ -1,0 +1,36 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Ignore build outputs
+target/
+*.class
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Ignore IntelliJ IDEA files
+.idea/
+
+# Ignore sensitive configuration
+application.properties

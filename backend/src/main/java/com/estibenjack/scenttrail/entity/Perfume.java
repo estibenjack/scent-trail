@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "perfumes")
 @JsonPropertyOrder({"id", "name", "brand", "season", "sillage", "longevity", "rating"})
@@ -22,8 +24,9 @@ public class Perfume {
     // @NotBlank(message= "Brand is mandatory")
     private String brand;
 
+    @ElementCollection
     @Enumerated(EnumType.STRING)
-    private PerfumeAttributes.SeasonEnum season;
+    private List<PerfumeAttributes.SeasonEnum> season;
 
     @Enumerated(EnumType.STRING)
     private PerfumeAttributes.SillageEnum sillage;
@@ -35,15 +38,15 @@ public class Perfume {
     private PerfumeAttributes.RatingEnum rating;
 
     // constructors
-    public Perfume(){
-        //default constructor
-    }
+
+    //default constructor
+    public Perfume(){}
 
     @JsonCreator
     public Perfume(
                    String name,
                    String brand,
-                   PerfumeAttributes.SeasonEnum season,
+                   List<PerfumeAttributes.SeasonEnum> season,
                    PerfumeAttributes.SillageEnum sillage,
                    PerfumeAttributes.LongevityEnum longevity,
                    PerfumeAttributes.RatingEnum rating) {
@@ -86,11 +89,11 @@ public class Perfume {
         this.brand=brand;
     }
 
-    public PerfumeAttributes.SeasonEnum getSeason() {
+    public List<PerfumeAttributes.SeasonEnum> getSeason() {
         return season;
     }
 
-    public void setSeason(PerfumeAttributes.SeasonEnum season) {
+    public void setSeason(List<PerfumeAttributes.SeasonEnum> season) {
         this.season=season;
     }
 
