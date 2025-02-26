@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
@@ -9,12 +9,24 @@ const Navbar = () => {
         Scent Trail
       </h2>
       <div className="nav-links">
-        <Link to="/" draggable="false">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+          draggable="false"
+        >
           Dashboard
-        </Link>
-        <Link to="/view-all" draggable="false">
+        </NavLink>
+        <NavLink
+          to="/view-all"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+          draggable="false"
+        >
           View All
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );
