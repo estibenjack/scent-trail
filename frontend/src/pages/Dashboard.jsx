@@ -1,8 +1,8 @@
 function Dashboard() {
   return (
-    <div>
-      <div className="dashboard-content">
-        <h2>Welcome to your Dashboard</h2>
+    <div className="page-container">
+      <div className="dashboard-container">
+        <h2 className="title">Welcome to your Dashboard</h2>
       </div>
     </div>
   );
